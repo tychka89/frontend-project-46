@@ -2,13 +2,14 @@
 
 import { Command } from 'commander';
 
-const program = new Command();
+const program = new Command('gendiff');
 
 program
+  .name('gendiff')
   .version('1.0.0')
   .description('Compares two configuration files and shows a difference.')
-  .helpOption('-e, --elp', 'read more information')
   .option('-f, --format [type]', 'output format', 'stylish')
+  .helpOption('-h, --help', 'output usage information')
   .argument('<filepath1>')
   .argument('<filepath2>')
   .action((filepath1, filepath2) => {
