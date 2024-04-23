@@ -15,6 +15,9 @@ const genDiff = (filepath1, filepath2) => {
   const json1 = parseJson(filepath1);
   const json2 = parseJson(filepath2);
 
+  console.log(json1);
+  console.log(json2);
+
   const sortedAllKey = _.sortBy(_.union(Object.keys(json1), Object.keys(json2)));
   const diffsArray = sortedAllKey.map((key) => {
     const isKeyInJson1 = _.has(json1, key);
