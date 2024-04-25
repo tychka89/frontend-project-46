@@ -5,7 +5,7 @@ import { cwd } from 'process';
 
 const getPath = (filename) => path.resolve(cwd(), filename);
 
-const getFileFormat = (filename) => path.extname(filename).slice(1);
+// const getFileFormat = (filename) => path.extname(filename).slice(1);
 
 const readFile = (filepath) => readFileSync(filepath, 'utf8');
 
