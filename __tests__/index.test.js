@@ -26,6 +26,6 @@ describe('YAML Test', () => {
     const filename2 = getFixturePath('file2.yml');
     const resultname = getFixturePath('file_result.txt');
     const result = readFileSync(resultname, 'utf8');
-    expect(gendiff(filename1, filename2)).toEqual(result);
+    expect(genDiff(filename1, filename2)).toEqual(result);
   });
 });
