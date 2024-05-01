@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 
 describe('JSON Stylish Tests', () => {
-  test('filejson', () => {
+  test('filejson1', () => {
     const filepath1 = getFixturePath('file1.json');
     const filepath2 = getFixturePath('file2.json');
     const resultname = getFixturePath('file_result.txt');
@@ -22,7 +22,7 @@ describe('JSON Stylish Tests', () => {
 });
 
 describe('YAML Stylish Test', () => {
-  test('fileyml', () => {
+  test('fileyml1', () => {
     const filepath1 = getFixturePath('file1.yml');
     const filepath2 = getFixturePath('file2.yml');
     const resultname = getFixturePath('file_result.txt');
@@ -32,7 +32,7 @@ describe('YAML Stylish Test', () => {
 });
 
 describe('JSON Plain Test', () => {
-  test('filejson', () => {
+  test('filejson2', () => {
     const filepath1 = getFixturePath('file1.json');
     const filepath2 = getFixturePath('file2.json');
     const resultname = getFixturePath('expectedPlain.txt');
@@ -42,7 +42,7 @@ describe('JSON Plain Test', () => {
 });
 
 describe('YML Plain Test', () => {
-  test('fileyml', () => {
+  test('fileyml2', () => {
     const filepath1 = getFixturePath('file1.yml');
     const filepath2 = getFixturePath('file2.yml');
     const resultname = getFixturePath('expectedPlain.txt');
@@ -52,7 +52,7 @@ describe('YML Plain Test', () => {
 });
 
 describe('YAML Plain Test', () => {
-  test('fileyaml', () => {
+  test('fileyaml3', () => {
     const filepath1 = getFixturePath('file1.yaml');
     const filepath2 = getFixturePath('file2.yaml');
     const resultname = getFixturePath('expectedPlain.txt');
@@ -62,7 +62,7 @@ describe('YAML Plain Test', () => {
 });
 
 describe('json jsonFormat Test', () => {
-  test('filejson', () => {
+  test('filejson3', () => {
     const filepath1 = getFixturePath('file1.json');
     const filepath2 = getFixturePath('file2.json');
     const resultname = getFixturePath('expectedJson.txt');
@@ -72,7 +72,7 @@ describe('json jsonFormat Test', () => {
 });
 
 describe('YML jsonFormat Test', () => {
-  test('fileyml', () => {
+  test('fileyml4', () => {
     const filepath1 = getFixturePath('file1.yml');
     const filepath2 = getFixturePath('file2.yml');
     const resultname = getFixturePath('expectedJson.txt');
@@ -82,7 +82,7 @@ describe('YML jsonFormat Test', () => {
 });
 
 describe('YAML jsonFormat Test', () => {
-  test('fileyaml', () => {
+  test('fileyaml5', () => {
     const filepath1 = getFixturePath('file1.yaml');
     const filepath2 = getFixturePath('file2.yaml');
     const resultname = getFixturePath('expectedJson.txt');
