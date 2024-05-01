@@ -32,11 +32,8 @@ const plain = (diff) => {
           throw new Error(`Unsupported node type (${type})!`);
       }
     });
-
     return lines.filter((line) => line !== '').join('\n');
   };
-
   return iter(diff, '');
 };
-
 export default plain;
